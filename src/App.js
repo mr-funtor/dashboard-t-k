@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import SideNav from './components/SideNav'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <SideNav />
+      <div className="flex-1 bg-[#f4f8fc] h-screen rounded-tl-lg px-5 py-4">
+      
+          <section>
+            <input className="" type="text"/>
+
+          </section>
+      </div>
     </div>
   );
 }
