@@ -9,6 +9,8 @@ import Overview from './components/Overview'
 import BarChart from './components/BarChart'
 import Card from './components/Card'
 import SellingBox from './components/SellingBox'
+import SingleProduct from './components/SingleProduct'
+
 
 //icons
 
@@ -31,15 +33,20 @@ function App() {
             
             {
             userData.map((data)=>{
-                const {properties}=data;
+                
                 return <Card data={data} />
             })      
               }
           </div>
           
-          <div className="mt-8">
+          <div className="mt-8 flex gap-x-[20px] ">
             <SellingBox/>
+              
+              <div className="flex-1 bg-white h-auto p-7">
+                <SingleProduct/>
+              </div>
           </div>
+          
       
       </div>
     </div>
