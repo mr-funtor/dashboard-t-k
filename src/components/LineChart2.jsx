@@ -1,7 +1,8 @@
-import { Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
+import { Bar} from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 
-function BarChart({ chartData }) {
+function LineChart({ chartData }) {
     const options={
         responsive:true,
         maintainAspectRatio: false,
@@ -31,13 +32,11 @@ function BarChart({ chartData }) {
             yAxes:[{
                 gridLines:{
                     drawBorder: false,
-                    display:false
                 }
             }],
             xAxes:[{
                 gridLines:{
                     drawBorder: false,
-                    display:false
                 }
             }]
         },
@@ -45,11 +44,12 @@ function BarChart({ chartData }) {
             legend:{
                display:false, 
             }
-        }
+        },
+        
     }
+   
     
-    
-  return <Bar data={chartData} options={options}/>;
+  return <Line data={chartData} options={options}/>;
 }
 
-export default BarChart;
+export default LineChart;

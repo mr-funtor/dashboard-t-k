@@ -1,7 +1,13 @@
+import {useState} from 'react'
+import LineChart from './LineChart'
+import {singleData} from '../data'
 
 const Overview=()=>{
+
+
+    
     return(
-    <section className="bg-white h-64 mt-4 rounded-lg mb-8">
+    <section className="bg-white h-72 mt-4 rounded-lg mb-8">
         <header className="flex justify-between p-3">
             <h3 className="font-bold">Sales Overview</h3>
             <button className="w-44 h-8 bg-gradient-to-r from-[#2e8ee9] to-[#4b62d2] flex items-center justify-center rounded-md text-white"><i className="mr-2">+</i> Add Offer</button>
@@ -20,6 +26,10 @@ const Overview=()=>{
                 </select>
             </div>
                 
+        </div>
+            
+        <div className="h-[160px]  relative">
+            <LineChart className="bg-red-400" chartData={singleData}/>    
         </div>
     </section>
     )

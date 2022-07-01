@@ -1,7 +1,7 @@
-import { Bar } from "react-chartjs-2";
+import { Radar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 
-function BarChart({ chartData }) {
+function RadarChart({ chartData }) {
     const options={
         responsive:true,
         maintainAspectRatio: false,
@@ -49,7 +49,7 @@ function BarChart({ chartData }) {
     }
     
     
-  return <Bar data={chartData} options={options}/>;
+  return <Radar data={chartData} options={options}/>;
 }
 
-export default BarChart;
+export default RadarChart;
