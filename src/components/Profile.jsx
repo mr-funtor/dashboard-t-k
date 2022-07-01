@@ -5,7 +5,7 @@ const Profile=()=>{
     <div className="flex">
         <div>
             <p className="font-bold">jamesbrown@example.com</p>    
-            <p className="text-right">Admin</p>    
+            <p className="text-right text-gray-500">Admin</p>    
         </div>    
 
         <div className="h-12 w-12 rounded-full overflow-hidden ml-4">

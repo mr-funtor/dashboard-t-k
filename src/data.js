@@ -8,7 +8,9 @@ export const singleData={
         datasets:[{
             data:[25,28,15,32,28,24,26,30,33,35,32,20],
             tension:0.4,
-            borderColor:'blue'
+            borderColor:'blue',
+            fill: true,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)'
         },{
 //            data:[13,23,10]
         }]
@@ -18,7 +20,9 @@ export const singleData2={
         labels:['Shoes', 'Jeans','Accessories', 'Bag','T-shirts','Outwear'],
         datasets:[{
             data:[25,28,15,32,28,24,26],
-            borderColor:'blue'
+            borderColor:'blue',
+            fill:true,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)'
         },{
 //            data:[13,23,10]
         }]
@@ -76,7 +80,7 @@ export const userData=[
         properties:{
             labels:labels2,
             datasets:[{
-                data:[25,28,15,32,28,24,26],
+                data:[15,28,15,32,22,24,36],
                 tension:0.4,
                 borderColor:'blue',
                 backgroundColor:'rgba(255, 99, 132, 0.2)'

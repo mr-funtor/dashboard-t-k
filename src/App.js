@@ -32,18 +32,24 @@ function App() {
               
             
             {
-            userData.map((data)=>{
-                
-                return <Card data={data} />
-            })      
-              }
+                userData.map((data)=>{
+
+                    return <Card data={data} />
+                })      
+            }
           </div>
           
           <div className="mt-8 flex gap-x-[20px] ">
             <SellingBox/>
               
-              <div className="flex-1 bg-white h-auto p-7">
-                <SingleProduct/>
+              <div className="flex-1 bg-white h-auto p-7 rounded-lg">
+            {
+                userData.map((data)=>{
+
+                    return <SingleProduct/>
+                })      
+            }
+                
               </div>
           </div>
           
